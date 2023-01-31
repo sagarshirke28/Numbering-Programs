@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class FascinatingNumber     //327,  192, 1920
+{
+ public static void main(String[] args) 
+ {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter a num");
+	int num=sc.nextInt();
+	String s1="";
+	int a=num*2;
+	int b=num*3;
+	boolean a1=false;
+	boolean a2=false;
+	boolean a3=false;
+	boolean a4=false;
+	boolean a5=false;
+	boolean a6=false;
+	boolean a7=false;
+	boolean a8=false;
+	boolean a9=false;
+	String s2=s1+num+a+b;
+	for(int i=0;i<s2.length();i++)
+	{
+		if(s2.charAt(i)=='1')
+		{
+			 a1=true;
+		}
+		else if(s2.charAt(i)=='2')
+		{
+		    a2=true;
+		}
+		else if(s2.charAt(i)=='3')
+		{
+			 a3=true;
+		}
+		else if(s2.charAt(i)=='4')
+		{
+			 a4=true;
+		}
+		else if(s2.charAt(i)=='5')
+		{
+			 a5=true;
+		}
+		else if(s2.charAt(i)=='6')
+		{
+			 a6=true;
+		}
+		else if(s2.charAt(i)=='7')
+		{
+	        a7=true;
+		}
+		else if(s2.charAt(i)=='8')
+		{
+			 a8=true;
+		}
+		else if(s2.charAt(i)=='9')
+		{
+		    a9=true;
+		}
+	}
+	if(a1&&a2&&a3&&a4&&a5&&a6&&a7&&a8&&a9==true)
+	{
+		System.out.println("number is Fascinating Number");
+	}
+	else
+	{
+		System.out.println("number is not Fascinating Number");
+	}
+	
+}
+}
