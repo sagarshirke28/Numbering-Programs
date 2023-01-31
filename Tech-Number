@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class TechNumber 
+{
+   public static void main(String[] args)   //2025=== 20:25   20+25=45   square of 45=2025
+   {
+	  Scanner sc=new Scanner(System.in);
+	  System.out.println("enter a number");
+	  int num=sc.nextInt();
+	  int a=num;
+	  int count=0;
+	  while(num>0)
+	  {
+		  int rem=num%10;
+		  count++;
+		  num=num/10;
+	  }
+	  if(count==2)
+	  {
+		  int part1=a%10;
+		  int part2=1/10;
+		  int sum=part1+part2;
+		  int square=sum*sum;
+		  if(square==a)
+		  {
+			  System.out.println("Number is Tech Number");
+		  }
+		  else
+		  {
+			  System.out.println("number is not Tech Number");
+		  }
+	  }
+	  else if(count==4)
+	  {
+		  int part1=a%100;
+		  int part2=a/100;
+		  int sum=part1+part2;
+		  int square=sum*sum;
+		  if(square==a)
+		  {
+			  System.out.println("Number is Tech Number");
+		  }
+		  else
+		  {
+			  System.out.println("number is not Tech Number");
+		  }
+	  }
+	  else
+	  {
+		  System.out.println("Number is not Tech Number");
+	  }
+}
+}
