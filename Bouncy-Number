@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class BouncyNumber 
+{
+  public static void main(String[] args)        //1234543    increment and decrement
+  {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter a number");
+	int num=sc.nextInt();
+	int pre=num%10;
+	boolean a = false;
+	boolean b = false;
+	while(num>0)
+	{
+		int rem=num%10;
+		if(pre>rem)
+		{
+			a=true;
+		}
+		else if(pre<rem)
+		{
+			b=true;
+		}
+		num=num/10;
+		pre=rem;
+	}
+	if(a&&b==true)
+	{
+		System.out.println("number is bouncy");
+	}
+	else
+	{
+		System.out.println("not bouncy");
+	}
+  }
+}
